@@ -15,39 +15,70 @@ body {
 }
 
 #light-bar{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#light-bar #heading-container{
     height: 100px;
     overflow: hidden;
 }
 
 #light-bar #heading{    
-    transform: rotate(-270deg);
-    padding-top: 50%;
-    width: 50%;
-    margin: 0 25%;
+    transform: rotate(0deg);
+    padding-top: 100%;
 }
 
 #light-bar #heading:before{
     content: "";
-    border: 7px solid black;
+    border: 1em solid black;
     border-radius: 50%;
     display: block;
     position: absolute;
-    left: 2px;
-    top: 2px;
-    right: 2px;
-    bottom: 2px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-#light-bar #heading:after{
+#light-bar #heading #heading-indicator{
+    margin: auto;
+    position: absolute;
+    width: 0.5em;
+    left: 50%;
+    top: 0;
+}
+
+#light-bar #heading #heading-indicator:before{
     content: "";
     background-color: red;
     border-radius: 50%;
     border: 1px solid black;
-    width: 10px;
-    height: 10px;
+    width: 1em;
+    height: 1em;
     display: block;
     position: absolute;
-    top: 50%;
+    left: -100%;
+    box-sizing: border-box;
+}
+
+#light-bar #position-offset{
+    background-color: #575757;
+    border: 1px solid black;
+}
+
+#light-bar #position-offset:before{
+    content: "";
+    display: block;
+    height: 1em;
+    width: 1em;
+    background-color: red;
+    border-radius: 50%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: auto;
 }
 
 #zoom-controls{

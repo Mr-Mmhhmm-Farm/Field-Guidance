@@ -9,13 +9,20 @@
     </head>
     <body>
         <div id="light-bar">
-            <div id="heading"></div>
+            <div id="heading-container">
+                <div id="heading">
+                    <div id="heading-indicator"></div>
+                </div>
+            </div>
             <div id="position-offset"></div>
         </div>
-        <canvas id="map"></canvas>
-        <div id="zoom-controls">
-            <i class="icon-zoom-in"></i>
-            <i class="icon-zoom-out"></i>
+        <div>
+            <canvas id="map"></canvas>
+            <div id="zoom-controls">
+                <i class="icon-zoom-in"></i>
+                <i class="icon-zoom-out"></i>
+            </div>
         </div>
+        <div id="debug"></div>
     </body>
 </html>
