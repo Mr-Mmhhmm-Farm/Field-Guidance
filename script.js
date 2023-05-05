@@ -4,6 +4,6 @@ $(document).ready(function() {
     window.addEventListener('deviceorientation', function( event ) {
         deviceOrientationData = event;
         console.log(event);
-        $("#debug").text("x: " + event.beta + ", y: " + event.gamma + ", z: " + event.alpha + ", ts: " + event.timeStamp);
+        $("#debug").html("x: " + event.beta + ",</br>y: " + event.gamma + ",</br>z: " + event.alpha + ",</br>ts: " + event.timeStamp);
     }, false);
 });
