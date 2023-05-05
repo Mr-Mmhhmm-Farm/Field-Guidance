@@ -12,5 +12,5 @@ $(document).ready(function() {
 });
 
 function showPosition(position){
-    $("#debug-gps").html("Latitude: " + position.coords.latitude + "</br>Longitude: " + position.coords.longitude);
+    $("#debug-gps").html("Latitude: " + position.coords.latitude + "</br>Longitude: " + position.coords.longitude + "</br>Accuracy: " + position.coords.accuracy);
 }
